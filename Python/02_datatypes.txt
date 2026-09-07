@@ -1,0 +1,9 @@
+int   - (0-9) (-,+)
+float 
+str
+bool 
+complex - 5+7j
+NoneType
+
+
+
