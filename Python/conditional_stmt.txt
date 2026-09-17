@@ -1,0 +1,55 @@
+Conditional Statements – Assessment
+
+1. Write a Python program to check whether a given number is positive, negative, or zero.
+
+2. Write a Python program to check whether a given number is even or odd.
+
+3. Write a Python program to find the largest of two numbers.
+
+4. Write a Python program to find the largest of three numbers using if-elif-else.
+
+5. Write a Python program to check whether a person is eligible to vote based on age.
+
+6. Write a Python program to calculate a student's grade based on their mark.
+
+7. Write a Python program to check whether a given year is a leap year or not.
+
+8. Write a Python program to calculate discount based on purchase amount using conditional statements.
+
+9. Write a Python program to check whether a given character is a vowel or consonant.
+
+10. Write a Python program to check whether a student is eligible for an exam based on attendance percentage.
+
+11. Write a Python program to check whether a person is eligible for a loan based on age and salary.
+
+12. Write a Python program to check whether a username and password are valid using conditional statements.
+
+13. Write a Python program to determine whether a number is divisible by both 3 and 5.
+
+14. Ternary Operator:
+Rewrite a simple if-else logic using a ternary operator to determine whether a number is even or odd.
+
+15. Ternary Operator:
+Use a ternary operator to determine whether a person is eligible or not eligible based on their age.
+
+16. Write a Python program to check whether a given number is greater than 100, equal to 100, or less than 100.
+
+17. Write a Python program to calculate the electricity bill category based on the number of units consumed.
+
+18. Write a Python program to check whether a person can enter a movie theatre based on age and whether they have a valid ticket.
+
+19. Write a Python program to find whether a given number is divisible by 2, 3, both, or neither.
+
+20. Write a Python program to calculate an employee's bonus based on their salary and years of experience.
+
+21. Write a Python program to check whether three given sides can form a valid triangle.
+
+22. Write a Python program to classify a student's result as Pass, Fail, or Distinction based on their marks.
+
+23. Write a Python program to check whether a given temperature is Cold, Normal, or Hot.
+
+24. Ternary Operator:
+Use a ternary operator to determine whether a number is positive or negative.
+
+25. Ternary Operator:
+Use a ternary operator to find the smaller of two numbers.

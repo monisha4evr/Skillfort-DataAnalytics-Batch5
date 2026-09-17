@@ -21,7 +21,9 @@ Key features:
     cross platform support
     Multiple paradigms.
     vast standard Library and 
-    support 1000's of third party Modules(Collection of  pre-written python code created by individual developers or communities - to use this pip install)
+    support 1000's of third party Modules
+    (Collection of  pre-written python code created by individual developers or communities - 
+    to use this pip install)
 Note: PIP python install package /preferred installer program.
 PyPI: python package index.
 modules example: django,pandas
