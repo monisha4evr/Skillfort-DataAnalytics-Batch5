@@ -4,6 +4,13 @@
 
 # => convert one data type into another data type
 
+a = input("Enter a Value")
+b = input("Enter b Value")
+print(type(a))
+print(type(b))
+print(a+b)
+
+
 
 a = int(input("Enter a Value"))
 b = int(input("Enter b Value"))
@@ -15,6 +22,13 @@ print(c)
 # 2 Type: 
 # 1. implicit (Automatic conversion)
 # 2. Explicit (Manual Conversion)
+
+
+
+a=int("10")
+b=10.5 
+print(a+b)
+
 
 # Explicit:
 # ----------

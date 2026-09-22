@@ -1,0 +1,103 @@
+Data type
+    "Everything is an Object"
+
+a=10
+b="banana" 
+c=10.5
+
+print(type(a))
+
+
+Python Data Types
+│
+├── Numeric
+│   ├── int
+│   ├── float
+│   └── complex  1+5j
+│
+├── Sequence
+│   ├── str
+│   ├── list (collection)
+│   ├── tuple (collection)
+│   └── range
+│
+├── Mapping
+│   └── dict (collection)
+│
+├── Set
+│   ├── set (collection)
+│   └── frozenset (collection)
+│
+├── Boolean
+│   └── bool True,False
+│
+├── Binary
+│   ├── bytes
+│   ├── bytearray
+│   └── memoryview
+│
+└── None
+    └── NoneType
+
+
+Mutable 
+
+    - we can modify/change
+    - List ,set,dict
+
+
+
+immutable 
+    - we cannot change
+
+    int 
+    str 
+    float
+    tuple 
+
+
+List: 
+    denoted by []
+    collection 
+    1. ordered 
+    2. allow Duplicate 
+    3. mutable 
+    4. hetrogeneous data
+eg: [1,2,2,3,4,"apple",12.5,True]
+
+
+tuple : 
+    collection 
+    denoted () 
+    1. ordered 
+    2. allow Duplicate 
+    3. immutable 
+    4. hetrogeneous
+
+    eg: (1,2,2,"apple")
+
+set:
+    denoted by {}
+    1.unordered 
+    2. dont allow duplicate 
+    3. mutable 
+    4. hetrogeneous
+
+    eg:{1,2,3,4}
+
+dict 
+    {
+        "k":"value"
+    }
+    1. ordered 
+    2. key -not allow duplicate
+        values accepts duplicates 
+
+    eg:{
+        "name":"orange",
+        "color":"orange",
+        "price":102.5
+    }
+
+
+

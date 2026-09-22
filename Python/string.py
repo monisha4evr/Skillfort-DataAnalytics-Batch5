@@ -44,6 +44,8 @@ a='pleasant Morning '
 
 print(a)
 
+a="cant't"
+
 
 
 a="i can't do this"
@@ -102,6 +104,8 @@ f -6
 
 
 a="flower are Beautiful"
+print(a.isalpha())
+print(a.endswith('e'))
 print(len(a))
 print(a.capitalize())
 print(a.upper())
@@ -109,6 +113,7 @@ print(a.lower())
 print(a.count('a'))
 
 # search
+a="flower are Beautiful"
 print(a.find('a')) # it print the first occurance 
 print(a.find('y'))  # it returns -1 if letter not found
 print(a.index('a'))
@@ -123,10 +128,13 @@ print(a.endswith('l'))
 print(a.endswith('f'))
 
 
+0000000001
+
+
 a="flower"
 print(a.zfill(10))
 
-a='123'
+a='12'
 print("prd"+a.zfill(5))
 
 a="Flower"
@@ -141,6 +149,25 @@ print(a+' '+b)
 a="apple" 
 
 print(a*5)
+
+a="10"
+b="20"
+print(a+b)
+
+print([1,2,3,4]*5)
+print([1,2,3,4]+5)
+
+
+text="i,am,learning,python"
+print(text.split(','))
+
+text="Arifa@gmail.com"
+print(text.split('@'))
+
+
+a=['Arifa', 'gmail.com'] 
+res="@".join(a)
+print(res)
 
 
 
