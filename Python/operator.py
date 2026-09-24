@@ -20,13 +20,13 @@ Types of Operators:
 ----------------------
 
 - used to Perform Mathemetical Calculation 
-addition 
-subtraction 
-multiplication
-division 
-modulo-division 
-floor Division 
-Exponentiation
+addition  (+)
+subtraction (-)
+multiplication (*)
+division (/)  10.5 - quotent
+modulo-division (%) -  remainder
+floor Division (//)  10
+Exponentiation (**)
 
 Example:
 
@@ -76,7 +76,7 @@ print(a!=b) # False
 
 and - all true  -> True  orelse False
 or - 
-not 
+not - 
 
 0=> False 
 1=> True 
@@ -122,9 +122,26 @@ print(not age>=18)
 is , is not 
 
 a=10 
-b=15 
+b=15
+
+a=[1,2,3,4]
+b=[1,2,3,4]
 
 print(a is b)
+print(id(a),id(b))
+
+
+a=[1,2,3,4]
+b=a
+
+print(a is b)
+print(id(a),id(b))
+
+a=[1,2,3,4]
+b=a.copy()
+
+print(a is b)
+print(id(a),id(b))
 
 a=[1,2,3]
 b=[1,2,3]
@@ -180,7 +197,5 @@ print(a>>2)
 a=7 
 print(a>>2)
 print(a<<2)
-
-
 
 print(bin(17)) # to convert binary number 

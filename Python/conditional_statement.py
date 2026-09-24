@@ -16,7 +16,7 @@ Syntax
 if condition :
     # statement
 
-age=19
+age=12
 
 if age>18:
     print("Eligible")
@@ -40,7 +40,7 @@ else :
 
 
 user_name ="siva"
-password="siva@123"
+password="siva@1234"
 if user_name=="siva" and password=="siva@1234":
     print("Successfully Logged In")
 else :
@@ -85,7 +85,7 @@ else:
 
 Nested if:
 
-age =13
+age =18
 voter_id=False
 
 if age>=18:
@@ -120,7 +120,7 @@ if a%2==0:
 else :
     print("Odd")
 
-a=11
+a=12
 print( "Even" if a%2==0 else "Odd")
 
 
