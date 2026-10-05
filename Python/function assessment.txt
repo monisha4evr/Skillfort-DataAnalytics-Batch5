@@ -1,0 +1,35 @@
+Python Functions – 30 Program Questions
+Write a function square() that accepts a number and returns its square.
+Write a function check_even_odd() that accepts a number and returns whether it is even or odd.
+Write a function find_largest() that accepts three numbers and returns the largest number.
+Write a function find_smallest() that accepts three numbers and returns the smallest number.
+Write a function calculate() that accepts two numbers and returns their addition, subtraction, multiplication, and division.
+Write a function count_vowels() that accepts a string and returns the number of vowels.
+Write a function reverse_string() that accepts a string and returns the reversed string.
+Write a function is_palindrome() that accepts a string and checks whether it is a palindrome.
+Write a function count_characters() that accepts a string and returns the count of each character as a dictionary.
+Write a function remove_duplicates() that accepts a list and returns a list without duplicate values.
+Write a function find_max_min() that accepts a list and returns both the maximum and minimum values.
+Write a function calculate_sum() that accepts a list of numbers and returns the total sum without using Python's built-in sum().
+Write a function count_even_odd() that accepts a list and returns the number of even and odd values.
+Write a function find_second_largest() that accepts a list and returns the second-largest number.
+Write a function common_elements() that accepts two lists and returns their common elements.
+Write a function calculate_factorial() that accepts a number and returns its factorial.
+Write a function is_prime() that accepts a number and checks whether it is prime.
+Write a function get_primes() that accepts a list of numbers and returns only the prime numbers.
+Write a function calculate_grade() that accepts marks and returns the grade based on the given marks.
+Write a function student_result() that accepts a student's name and three subject marks and returns the total, average, and grade.
+Write a function calculate_bill() that accepts price and quantity and returns the total bill amount.
+Write a function discount_bill() that accepts the bill amount and applies a 10% discount if the amount is greater than ₹5000.
+Write a function employee_salary() that accepts basic salary and experience and calculates the final salary based on bonus percentage.
+Write a function count_words() that accepts a sentence and returns the number of words.
+Write a function word_frequency() that accepts a sentence and returns the frequency of each word as a dictionary.
+Write a function common_keys() that accepts two dictionaries and returns the keys that are present in both dictionaries.
+Write a function highest_salary() that accepts a dictionary containing employee names and salaries and returns the employee with the highest salary.
+Write a function product_details() that accepts product name, price, quantity, and discount percentage and returns the final price.
+Write a function transaction_summary() that accepts a list of transaction amounts and returns:
+Total amount
+Highest transaction
+Lowest transaction
+Average transaction
+Write a function shopping_cart() that accepts a dictionary containing product names and prices, calculates the total bill, applies a discount based on the total amount, and returns the final bill.

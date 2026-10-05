@@ -317,6 +317,25 @@ tuplecomplrehension
 dictionarycomprehension
 
 
+Iterator
+- Access Value one by one 
+
+numbers=[10,30,20,50,70]
+it=iter(numbers)
+
+print(next(it))
+print(next(it)) 
+
+
+Generator : 
+
+- Generate value one by one 
+- yield() 
+- next()
+
+
+
+
 
       
     

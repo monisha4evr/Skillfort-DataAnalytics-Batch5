@@ -1,0 +1,102 @@
+PART A – Short Answer Questions
+10 × 1 = 10 Marks
+What is the difference between = and == in Python?
+What will be the output?
+x = 10
+y = 3
+print(x // y)
+What is type casting? Give one example.
+What is the difference between a list and a tuple?
+What will be the output?
+name = "Python"
+print(name[-1])
+Which method is used to add an element at the end of a list?
+What is the use of the break statement?
+Write a ternary expression to find whether a number is positive or negative.
+What is the output?
+x = [1, 2, 3]
+y = [i * 2 for i in x]
+print(y)
+What is the difference between append() and extend()?
+PART B – Predict the Output
+5 × 2 = 10 Marks
+Find the output:
+x = 15
+y = 4
+
+print(x + y)
+print(x % y)
+print(x ** 2)
+Find the output:
+text = "python programming"
+
+print(text.upper())
+print(text.title())
+print(text.count("p"))
+Find the output:
+numbers = [10, 20, 30]
+
+numbers.append(40)
+numbers.remove(20)
+
+print(numbers)
+Find the output:
+for i in range(1, 6):
+    if i == 4:
+        break
+    print(i)
+Find the output:
+numbers = [1, 2, 3, 4, 5]
+
+result = [x for x in numbers if x % 2 == 0]
+
+print(result)
+PART C – Coding Questions
+5 × 4 = 20 Marks
+Write a Python program to take a student's name, age, and mark as input and display their values along with their data types.
+Write a Python program to take a number from the user and check whether it is:
+Positive
+Negative
+Zero
+Write a Python program to count the number of vowels in a given string using a loop.
+
+Example:
+
+Input: education
+Output: 5
+Write a Python program to find the largest number in a list without using the max() function.
+
+Example:
+
+numbers = [25, 10, 45, 30, 15]
+
+Expected output:
+
+Largest number: 45
+Create a list containing numbers from 1 to 20 using list comprehension.
+
+Then create another list containing only the numbers divisible by 3.
+
+PART D – Intermediate Scenario Questions
+2 × 5 = 10 Marks
+A company wants to calculate an employee's salary category.
+
+Take the employee's salary as input and display:
+
+Salary >= 50000 → "High Salary"
+Salary >= 30000 → "Medium Salary"
+Salary >= 15000 → "Low Salary"
+Otherwise → "Entry Level"
+
+Write the Python program using conditional statements.
+
+A shopping application has the following product prices:
+prices = [1200, 500, 2500, 800, 1500, 3000]
+
+Write a Python program to:
+
+Create a new list containing only prices greater than 1000.
+Apply a 10% discount to those prices.
+Display the discounted prices.
+
+Use list comprehension.
