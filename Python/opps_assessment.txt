@@ -1,0 +1,107 @@
+1. Class & Object – Basic
+Create a Student class with:
+
+name
+age
+course
+
+Create 3 student objects and display their details.
+
+2. Constructor
+Create an Employee class with name, employee_id, and salary.
+Use __init__() to initialize the values and create two employee objects.
+
+3. Instance Method
+Create a BankAccount class with:
+
+account_holder
+balance
+
+Create methods:
+
+deposit()
+withdraw()
+display_balance()
+
+Make sure withdrawal is allowed only when sufficient balance is available.
+
+4. Encapsulation
+Create a User class with a private variable __password.
+
+Create methods to:
+
+Set password
+Change password
+Validate password
+
+The password should not be accessed directly from outside the class.
+
+5. Inheritance
+Create a parent class Employee with:
+
+name
+salary
+
+Create child classes:
+
+Developer
+Tester
+
+Add one additional method/attribute specific to each child class.
+
+6. Method Overriding
+Create a parent class Vehicle with a method:
+
+start()
+
+Create Car and Bike classes that inherit from Vehicle and override the start() method.
+
+7. super()
+Create an Employee class with name and salary.
+
+Create a Manager class that inherits from Employee and additionally has team_size.
+
+Use super() inside the child class constructor.
+
+8. Polymorphism – Real Scenario
+Create classes:
+
+UPIPayment
+CardPayment
+CashPayment
+
+Each class should have:
+
+make_payment(amount)
+
+Write a common function that accepts any payment object and calls make_payment().
+
+9. Abstraction
+Create an abstract class Shape with an abstract method:
+
+area()
+
+Create:
+
+Rectangle
+Circle
+
+Implement area() in both classes.
+
+10.Build a simple Employee Management System using OOP.
+
+Requirements:
+
+Create an Employee class.
+Store employee ID, name, department and salary.
+Create methods to display employee details and calculate annual salary.
+Create Developer and Manager child classes.
+Developer should have programming_language.
+Manager should have team_size.
+Use inheritance.
+Use method overriding wherever appropriate.
+Use encapsulation for salary.
+Create at least 3 employee objects.
+Display their complete details.
+
+Bonus: Add a method to calculate bonus based on employee type.
