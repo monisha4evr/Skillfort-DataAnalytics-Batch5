@@ -1,0 +1,39 @@
+1. Given 'python programming', convert the string into uppercase.
+
+2. Given 'HELLO WORLD', convert it into lowercase.
+
+3. Count how many times 'a' appears in 'banana'.
+
+4. Replace every 'o' with '0' in 'python programming'.
+
+5. Remove the leading and trailing spaces from '  Welcome Python  '.
+
+6. Check whether 'Python123' contains only letters and numbers.
+
+7. Split 'apple,banana,orange' using the comma separator.
+
+8. Check whether 'DataAnalytics' starts with 'Data'.
+
+9. Find the position of the first occurrence of 'n' in 'programming'.
+
+10. Join the list ['Python', 'SQL', 'Power BI'] using ' - '.
+
+11. Given "welcome to python", convert the first letter of each word into uppercase using a string method.
+
+12. Given "PyThOn", convert uppercase letters into lowercase and lowercase letters into uppercase.
+
+13. Given "banana", find the last occurrence position of "a".
+
+14. Given "Python Programming", check whether the string ends with "ing".
+
+15. Given "hello world", find the position of the first occurrence of "world".
+
+16. Given "apple123", check whether all characters are alphabetic.
+
+17. Given "12345", check whether all characters are numeric digits using a string method.
+
+18. Given "Python Java Python SQL", replace "Python" with "Java".
+
+19. Given "one-two-three-four", split the string using "-" as the separator.
+
+20. Given the string "  Data Analytics  ", remove only the spaces on the right side.

@@ -1,0 +1,55 @@
+
+select * from demo.emp_attendance where attendance_date ='2026-11-09';
+select * from demo.emp_attendance where attendance_date >= current_date - interval '5 days';
+
+select current_date - interval '5 months';
+
+select current_date - interval '5 days';
+select current_date - interval '1 years';
+
+select extract(year from attendance_date) as year,
+extract (month from attendance_date) as month from demo.emp_attendance;
+
+select extract(day from current_timestamp) as day,
+extract(month from current_timestamp) as month,
+extract(year from current_timestamp),
+extract ( day from current_date) as day;
+
+
+select current_timestamp,current_timestamp :: date,current_timestamp :: time;
+select cast(current_date as timestamp);
+
+
+select '2026-11-12'::date - '2026-11-01'::date as date_diff;
+
+select date_trunc('year',current_date);
+select date_trunc('month',current_date);
+select date_trunc('week',current_date);
+
+
+-- Aggregation 
+
+select * from public.payments;
+
+select sum(paid) as total_amount  from public.payments;
+select count(paid) as total_payment_count from public.payments;
+select max(paid) as higest_amt from public.payments;
+select min(paid) as higest_amt from public.payments;
+
+
+select * from public.students;
+select sum(age),count(city) from public.students;
+select count(distinct(city)) from public.students;
+
+select name,city from public.students order by city ; -- default : asc
+select name,city from public.students order by city asc;
+select name,city from public.students order by city desc;
+
+select min(age) from public.students;
+select * from public.students   offset 10; --pagination
+
+
+-- group by
+
+select city,count(city) as tot_count from public.students 
+group by city order by tot_count desc limit 1 ;

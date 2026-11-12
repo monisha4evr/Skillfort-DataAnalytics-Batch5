@@ -1,0 +1,80 @@
+Python Variables & Data Types – 10 Practice Questions
+1. Student Details
+
+Create variables to store a student's name, age, course name, and percentage. Print all the details.
+
+2. Employee Salary
+
+Store an employee's monthly salary as 25000. Calculate and print the annual salary.
+
+3. Identify Data Types
+
+Create four variables with values "Python", 100, 99.5, and True. Print each variable's data type using type().
+
+4. Shopping Bill
+
+A customer buys 3 notebooks at ₹50 each and 2 pens at ₹10 each. Store the quantity and price in variables and calculate the total bill.
+
+5. Student Average
+
+Store marks for three subjects: 85, 90, and 78. Calculate and print the total and average marks.
+
+6. Product Details
+
+Create variables for a product's name, price, stock quantity, and availability status. Print all the details.
+
+7. Movie Details
+
+Create variables to store a movie's name, rating, release year, and whether it is a blockbuster. Print the values and their data types.
+
+8. Rectangle Calculation
+
+Store the length as 15 and breadth as 8. Calculate and print the area and perimeter of the rectangle.
+
+9. Online Order
+
+Store the customer name, product name, quantity, price per item, and delivery charge in variables. Calculate and print the final order amount.
+
+10. Employee Information
+
+Create variables to store an employee's name, employee ID, experience in years, salary, and whether they are a permanent employee. Print each value and its data type.
+
+
+1.
+Create one variable for each numeric type: int, float, and complex. Store suitable values.
+
+
+2.
+Create a string variable called name and store your name.
+
+
+3.
+Create a list called marks and store 5 subject marks.
+
+
+4.
+Create a tuple called colors and store 4 color names.
+
+
+5.
+Create a dictionary called student with name, age, and city as keys.
+
+
+6.
+Create a set called numbers with the values 10, 20, 10, 30, 20. Print the set.
+
+
+7.
+Create a Boolean variable called is_student and assign True.
+
+
+8.
+Create a variable called result and assign None.
+
+
+9.
+Create variables for your name, age, height, and whether you are a student. Print all four values.
+
+
+10.
+Create one variable for each of these types: str, list, tuple, dict, set, bool, and NoneType. Print each variable's type using type().

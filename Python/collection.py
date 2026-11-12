@@ -21,18 +21,44 @@ a=[1,2,3,4]
 a.append(5)
 print(a)
 a.append([6,7])
+print(a)
 a.append((6,7))
+print(a)
+a=[1,2,3,4]
+a.append({6,7})
+a.append({"a":"b"})
 print(a)
 a.extend([8,9])
 print(a)
 a.insert(2,9)
 print(a)
 
-remove/delete 
+a=[1,2,3]
+a.extend({"a":"b"})
+print(a)
 
-1. pop()/ pop(1) # last element / index based 
-2. clear() # remove full list
-3. remove() # remove based on value
+a={"a":"b"}
+print(type(a))
+
+
+a=[1,2]
+b=[2,4]
+print(a+b)
+a.extend(b)
+print(a)
+
+a=[5,1,9,2,3,0]
+b=sorted(a)
+print(b,a)
+a.sort()
+print(a)
+
+
+# remove/delete 
+
+# 1. pop()/ pop(1) # last element / index based 
+# 2. clear() # remove full list
+# 3. remove() # remove based on value
 
 
 a=[10,20,30,40,50]
@@ -60,9 +86,9 @@ print(a.count(3))
 print(a)
 print(len(a))
 
-copy: 
-1. assign 
-2. copy()
+# copy: 
+# 1. assign 
+# 2. copy()
 
 
 a=[1,2,3,4]
@@ -88,7 +114,7 @@ print(c)
 print(id(a),id(c))
 
 
-sort 
+# sort 
 a=[5,2,8,4,1,3]
 print(a)
 a.sort()
@@ -96,29 +122,29 @@ print(a)
 a.sort(reverse=True)  # descending order
 print(a)
 
-Task 1: ["apple","orange","Banana","gauva"]
+# Task 1: ["apple","orange","Banana","gauva"]
 
-reverse: 
---------
+# reverse: 
+# --------
 a=[5,2,8,4,1,3]
 print(a)
 a.reverse()
 print(a)
 
-index:
-------
+# index:
+# ------
 a=[1,2,3,5]
 print(a.index(3))
 # print(a.index(7)) => it will throw Error
 
 
 
-tuple: 
---------
-    - immutable 
-    - ordered 
-    - Allow Duplicate 
-    - hetrogenous
+# tuple: 
+# --------
+#     - immutable 
+#     - ordered 
+#     - Allow Duplicate 
+#     - hetrogenous
 
 
 a=(1,)
@@ -130,11 +156,11 @@ print(a.count(1))  # occurance
 print(a.index(3))  # return index position
 
 
-set
----
-    - mutable 
-    - unordered 
-    - dont allow duplicate 
+# set
+# ---
+#     - mutable 
+#     - unordered 
+#     - dont allow duplicate 
 
 
 a={10,20,20,30,30,30}
@@ -154,10 +180,10 @@ print(a.difference(b))
 print(a.symmetric_difference(b))
 
 
-dict 
-        - Key value pair 
-        - Key unique , value - allows duplicate 
-        - ordered 
+# dict 
+#         - Key value pair 
+#         - Key unique , value - allows duplicate 
+#         - ordered 
 
 a={"name":"apple","color":'red'}
 print(a)
@@ -185,3 +211,22 @@ a = {"name": "apple", "color": "red"}
 a.setdefault("price", 100)
 
 print(a)
+
+# Sort based on key
+# ------------------
+
+words = ["banana", "apple", "kiwi", "cherry"]
+sorted_words = sorted(words, key=len)  
+
+print(words)
+print(sorted_words)
+# ['kiwi', 'apple', 'banana', 'cherry']
+
+# Sort complex data (list of dictionaries) by a specific key
+students = [
+    {"name": "Alice", "grade": 88},
+    {"name": "Bob", "grade": 95},
+    {"name": "Charlie", "grade": 70}
+]
+# Sort by grade ascending
+students.sort(key=lambda user: user["grade"])
