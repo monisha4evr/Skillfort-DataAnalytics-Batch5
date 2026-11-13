@@ -190,15 +190,146 @@ def sample(a,**b):
 sample(a=1,b=2,c=3,d=4,e=5,f=6)
 
 # default 
+
+def display(username , login_name="user"):
+    print(username)
+    print(login_name)
+
+display("sakthi")
+display("deepal","Deepal")
+
+def display(count=0):
+    print(count)
+
+display()
+display(50)
+
 # positional only 
+
+
+def sample (a,b,c,/):
+    print(a,b,c) 
+
+sample(10,20,30)
+
+def sample (a,b,/,c,d):
+    print(a,b,c,d) 
+
+sample(10,20,d=40,c=30)
+sample(10,20,d=40,c=30)
+
+
+
+
 # keyword only 
 
+def sample (a,b,*,c,d):
+    print(a,b,c,d) 
+
+sample(10,20,d=40,c=30)
+sample(10,20,d=40,c=30)
 
 # lambda 
+    # anonymous function 
+    # small
+
+Syntax: lambda arguments:expression 
+note: automatically retuned 
+
+# normal 
+def add(a,b):
+    return a+b 
+
+print(add(10,20))
+
+-------------------
+
+add = lambda a,b : a+b
+print(add(10,20))
+
+mul =lambda x:x*x
+
+print(mul(5))
+
+high= lambda a,b: a  if a>b else b
+
+
+print(type(high))
+print(high(10,20))
+print(high(50,20))
+
+
+num=lambda x: "Even" if x%2==0 else  "Odd" if 0 else "not a number" 
+print(num(5))
+print(num(8))
+
+
 
 # recurrsion
+# function call itself
+#5! = 5*4*3*2*1
+
+def factorial(n):
+    if n==1:
+        return 1 
+    return n *  factorial(n-1)
+
+print(factorial(5))
+
+Execution 
+
+# Phase 1: Winding Down (Pausing to wait for smaller answers)
+
+# Python pauses each function call in memory (the call stack) until it hits 1.
+# 1. factorial(5) pauses and waits for 5 * factorial(4)
+# 2. factorial(4) pauses and waits for 4 * factorial(3)
+# 3. factorial(3) pauses and waits for 3 * factorial(2)
+# 4. factorial(2) pauses and waits for 2 * factorial(1)
+# 5. factorial(1) hits the base case and immediately returns 1
+
+# Phase 2: Unwinding Back Up (Multiplying the returned values)
+
+# Once factorial(1) returns 1, each paused function finishes its math in reverse order.
+# 1. factorial(2) calculates 2 * 1 and returns 2
+# 2. factorial(3) calculates 3 * 2 and returns 6
+# 3. factorial(4) calculates 4 * 6 and returns 24
 
 # higher order function (map,reduce,filter)
+
+map => built in function 
+Syntax: map(function,iterable)
+
+a=[1,2,3,4]
+res=[]
+for i in a:
+    res.append(i*2)
+
+print(res)
+
+
+a=[1,2,3,4]
+
+result=list(map(lambda x: x*2,a))
+
+print(result)
+
+a=('apple','orange','banana')
+res=tuple(map(lambda x:x.upper() ,a))
+
+print(res)
+
+a=(1,2,3,4)
+res=list(map(str,a))
+print(res)
+
+
+
+
+
+
+
+
+
 
 
 

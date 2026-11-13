@@ -367,9 +367,41 @@ select * from public.students   offset 10; --pagination
 -- group by
 
 select city,count(city) as tot_count from public.students 
-group by city order by tot_count desc limit 1 ;
+group by city order by tot_count desc;
+
+select city from public.students 
+group by city ;
 
 
+
+select city,count(city) as tot_count from public.students  where age>=20
+group by city  having count(city) < 7 order by tot_count desc;
+
+select * from public.students;
+select * from public.payments;
+
+-- join 
+
+-- cross join 
+-- left join 
+-- right join
+-- inner join
+-- self join 
+
+--cross join 
+-- method 1
+select * from "students" , "payments" where id='22S001';
+
+select * from "students" 
+cross join "payments" ;
+
+
+left join 
+---------
+
+select * from "students" as s
+inner join "payments"  p
+on s.id = p.student
 
 
 
