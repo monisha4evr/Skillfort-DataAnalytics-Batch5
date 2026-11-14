@@ -403,5 +403,67 @@ select * from "students" as s
 inner join "payments"  p
 on s.id = p.student
 
+-----
+CREATE TABLE employees (
+    emp_id INT PRIMARY KEY,
+    emp_name VARCHAR(50),
+    role VARCHAR(50),
+    manager_id INT
+);
+
+-- drop table demo.employees;
+
+INSERT INTO employees VALUES
+(1, 'Arun', 'CEO', NULL),
+(2, 'Bala', 'CTO', 1),
+(3, 'Charan', 'HR Manager', 1),
+(4, 'Divya', 'Team Lead', 2),
+(5, 'Ezhil', 'Python Developer', 4),
+(6, 'Farah', 'Python Developer', 4),
+(7, 'Gokul', 'HR Executive', 3),
+(8, 'Hari', 'Data Analyst', 2),
+(9, 'Isha', 'Data Engineer', 2),
+(10, 'Jeeva', 'Junior Developer', 5);
+----------------
+
+select * from employees;
+
+select e2.emp_name,e2.role,e1.emp_name,e1.role
+from employees as e1
+join employees as e2 
+on e1.emp_id = e2.manager_id
+
+select * from customers;
+select * from orders;
+
+
+select * from students;
+select * from courses;
+select * from  payments;
+
+
+select s.name,s.city,p.transaction_id,c.name,c.fee,p.paid
+from students as s 
+join payments as p 
+on s.id = p.student 
+join courses as c 
+on p.course = c.id
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+select * from public.order;
+select * from public.products;
+
 
 

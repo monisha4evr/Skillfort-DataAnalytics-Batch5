@@ -145,4 +145,3 @@ print("Age is Grater than 18" if age>18 else "Age is Lesser " )
 
  
 
-

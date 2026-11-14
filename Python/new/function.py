@@ -323,7 +323,83 @@ res=list(map(str,a))
 print(res)
 
 
+a=['a','b','c','d']
+print(list(map(str.upper,a)))
 
+a=["10","20","30","40","50"]
+print(list(map(int,a)))
+
+fruits=["Guava","Custard Apple","avagado"]
+print(list(map(len,fruits)))
+
+
+lst=[i for i in range(1,10)]
+
+fltr=list(filter(lambda i:i%2==0 ,lst))
+print(fltr)
+
+fruit="pineapple"
+print(list(filter(lambda i : i in "aeiou",fruit)))
+print(list(filter(lambda i : i not in "aeiou",fruit)))
+
+
+reduce
+
+1,2,3,4,5
+
+0+1 => 1
+1+2=> 3
+3+3=> 6
+6+4=> 10
+10+5 => 15 
+
+import functools as f
+
+lst=[1,2,3,4,5]
+r=f.reduce(lambda a,c : a + c ,lst)
+print(r)
+
+
+# generator
+
+def fname():
+    yield 1
+    yield 2
+    yield 3 
+
+f=fname()
+print(next(f))
+print(next(f))
+print(next(f))
+
+zip()
+
+name=["apple","orange","banana"]
+color=["red","orrange","yellow"]
+price=[300,200,100]
+
+print(list(zip(name,color,price)))
+
+
+
+# take the min match count
+name=["apple","orange","banana"]
+color=["red","orrange","yellow"]
+price=[300,200,100,400 ]
+
+print(list(zip(name,color,price)))
+
+iter
+----
+
+
+my_list=['python','java','php']
+a=iter(my_list)
+
+print(next(a))
+print(next(a))
+print(next(a))
+print(next(a))
 
 
 
