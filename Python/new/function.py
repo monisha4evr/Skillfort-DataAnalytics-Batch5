@@ -402,11 +402,60 @@ print(next(a))
 print(next(a))
 
 
+print(type(10 / 2).__name__)
+print(type(10 // 2).__name__)
+
+print(isinstance(True, int))
+print(True + 5)
+
+a = [10, 20]
+b = a
+b.append(30)
+print(a)
+
+a = (10, [20, 30])
+a[1].append(40)
+print(a)
+
+a = {1, True, 1.0, 2}
+print(len(a))
+
+
+11. What is the output?
+print(bool("False"))
+print(bool(" "))
+print(bool(""))
+
+
+x = "Python"
+print(x[-2])
+print(x[1:5:2])
+
+
+13. What is the output?
+print(not 0 == False)
 
 
 
+22. Identify the problem.
+age = int("25.5")
+print(age)
 
 
+23. What happens here?
+value = float("")
+print(value)
 
 
+24. Identify the error.
+x = "10"
+y = 5
+print(x + y)
 
+numbers = [10, 20, 30]
+result = numbers.append(40)
+print(result)
+
+x = 10
+if x == 10:
+    print("Equal")
