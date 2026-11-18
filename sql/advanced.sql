@@ -134,3 +134,98 @@ where (dept_id,salary) in (
 )
 
 
+
+
+CTE -- Common table Expression 
+-- temporary named result set 
+-- we can use that inside a SQL
+-- write complex query in simple and readable way 
+
+Syntax: 
+
+with cte_name as (
+	select * from table_name
+)
+select * from cte_name;
+
+select * from demo.employees_corr;
+
+with avg_salary as (
+select avg(salary) as averageSal from demo.employees_corr)
+select * from demo.employees_corr where salary > (select averageSal from avg_salary);
+
+with max_sal as (
+	select max(salary) as highest_salary from demo.employees_corr
+)
+select * from demo.employees_corr where salary =(select highest_salary from max_sal );
+
+with dept_avg as (
+	select dept_id,avg(salary) as avg_sal from demo.employees_corr group by dept_id
+)
+select * from dept_avg;
+
+
+ with dept_avg as (
+	select dept_id,avg(salary) as avg_sal from demo.employees_corr group by dept_id
+ )
+ select emp.* 
+ from demo.employees_corr as emp
+ join dept_avg d 
+ on emp.dept_id = d.dept_id 
+ where emp.salary>d.avg_sal;
+ 
+
+
+View
+--	virtual table - by sql query (saved sql query)
+-- it doesn't store actual data  
+-- it stores sql query and display result from original table.
+
+syntax: 
+-- create view view_name as select query
+
+create view demo.high_sal_emp as 
+select * from demo.employees_corr where dept_id=10 and salary >=50000;
+
+select * from demo.high_sa
+
+l_emp;
+
+
+ACID PROPERTY
+-- 
+A - Atomicy (all or nothing)
+C - Consistency (must follow the rules - contraints)
+I - Isolation (independent transaction)
+D - Durablity (permanent)
+
+
+Normalization
+--
+-- organizing data in database 
+-- reduce duplication
+
+department
+depart_id name
+101 python
+102 java
+103 data Analytics
+
+without normalization
+student -> id name dept_id, department
+
+with normalization
+student -> id name dept_id 
+department -> dept_id,department
+
+1. first normal form (1NF)  (one cell = one value)
+atomic - single
+2. second normal form (2NF)
+must satisfy 1NF 
+no partial dependency
+3. 3NF 
+must satisfy 2NF 
+no transitive dependency 
+
+
+

@@ -318,8 +318,11 @@ print(res)
 
 
 
+def sample():
+   return 10,20,30
 
-
+a,b,c=sample()
+print(b)
 
 
 

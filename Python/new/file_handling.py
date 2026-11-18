@@ -116,3 +116,47 @@ with open("rose.jpg","rb") as r:
 
 with open("rose_arifa.jpg","wb") as t:
    t.write(data)
+
+
+import os 
+print(os.getcwd())
+print(os.listdir())
+with open("AdvancePython/Python/new/rose.jpg", "rb") as f:
+    data = f.read()
+
+    import os
+
+path = "AdvancePython/Python/new/rose.jpg"
+
+print(os.path.exists(path))
+print(os.path.getsize(path))
+
+
+import os
+
+path = r"D:\Skillfort\SkillFortClass\DataAnalytics05\AdvancePython\Python\new\rose.jpg"
+
+print(os.path.exists(path))
+print(os.path.getsize(path))
+
+
+import os
+
+root = r"D:\Skillfort\SkillFortClass\DataAnalytics05"
+
+for folder, subfolders, files in os.walk(root):
+    if "rose.jpg" in files:
+        print("Image found:", os.path.join(folder, "rose.jpg"))
+
+import os
+path = r"D:\Skillfort\SkillFortClass\DataAnalytics05\Python\new\rose.jpg"
+
+with open(path, "rb") as f:
+    data = f.read()
+
+print("Data type:", type(data))
+print("Binary length:", len(data))
+print("File size:", os.path.getsize(path))
+
+with open("copy.jpg", "wb") as f:
+    f.write(data)
