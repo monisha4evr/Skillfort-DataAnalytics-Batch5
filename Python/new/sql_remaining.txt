@@ -1,0 +1,89 @@
+PostgreSQL – Remaining Topics
+1. Constraints – Important
+    No.	Topic	Status
+    1	NOT NULL	Cover
+    2	UNIQUE	Cover
+    3	CHECK	Cover
+    4	DEFAULT	Cover
+    5	FOREIGN KEY	Cover
+    6	ON DELETE CASCADE / SET NULL	Cover
+
+2. Advanced SQL Queries
+    No.	Topic	Priority
+    1	CASE WHEN	High
+    2	COALESCE()	High
+    3	NULLIF()	High
+    4	IS NULL / IS NOT NULL	High
+    5	EXISTS / NOT EXISTS	High
+    6	IN / NOT IN	High
+    7	ANY / ALL	Medium
+    8	UNION / UNION ALL	High
+    9	INTERSECT	Medium
+    10	EXCEPT	Medium
+    11	DISTINCT / DISTINCT ON	Medium
+
+3. Window Functions – Very Important
+Must cover for Data Analytics
+    No.	Topic
+    1	OVER()
+    2	PARTITION BY
+    3	ORDER BY inside OVER()
+    4	ROW_NUMBER()
+    5	RANK()
+    6	DENSE_RANK()
+    7	LAG()
+    8	LEAD()
+    9	FIRST_VALUE()
+    10	LAST_VALUE()
+    11	NTILE()
+    12	Running Total
+    13	Moving Average
+
+4. Advanced Aggregation
+    1. GROUPING SETS
+    2. ROLLUP
+    3. CUBE
+    4. FILTER clause
+    5. STRING_AGG()
+    6. ARRAY_AGG()
+    7. Conditional Aggregation using CASE WHEN
+
+5. Advanced PostgreSQL Objects
+    No.	Topic
+    1	Index – B-Tree, Hash, GIN, GiST
+    2	Materialized View
+    3	Stored Procedures
+    4	Triggers
+    5	Sequences
+    6	Temporary Tables
+    7	Recursive CTE
+
+6. Query Performance Optimization
+    1. EXPLAIN
+    2. EXPLAIN ANALYZE
+    3. Query execution plan
+    4. Index usage
+    5. Sequential Scan vs Index Scan
+    6. Query optimization techniques
+    7. Avoiding unnecessary subqueries
+    8. Join optimization basics
+
+7. Advanced Data Cleaning Functions
+    These are particularly useful for Data Analytics.
+    Category	Functions
+    String	TRIM, LTRIM, RTRIM, REPLACE
+    String	SPLIT_PART, CONCAT, STRING_AGG
+    Regex	REGEXP_REPLACE, REGEXP_MATCH, REGEXP_SPLIT_TO_TABLE
+    Numeric	ROUND, CEIL, FLOOR, ABS, MOD
+    Date	AGE, DATE_PART, DATE_TRUNC, EXTRACT
+    NULL	COALESCE, NULLIF
+
+8. PostgreSQL Data Types (DONE)
+1. VARCHAR vs TEXT
+2. CHAR
+3. NUMERIC vs FLOAT
+4. DATE vs TIMESTAMP
+5. BOOLEAN
+6. JSON and JSONB
+7. ARRAY
+8. SERIAL and IDENTITY 

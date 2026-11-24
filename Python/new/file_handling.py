@@ -160,3 +160,5 @@ print("File size:", os.path.getsize(path))
 
 with open("copy.jpg", "wb") as f:
     f.write(data)
+
+
